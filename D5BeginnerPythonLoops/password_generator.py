@@ -78,3 +78,19 @@ pwd = list(res_pwd)
 random.shuffle(pwd)
 res_pwd2 = "".join(pwd)
 print(f"Here is your password strong version: {res_pwd2}")
+
+# instructor version
+
+pwd = ""
+
+for char in range(1, nr_letters + 1):
+    pwd += random.choice(letters)
+for char in range(1, nr_symbols + 1):
+    pwd += random.choice(symbols)
+for char in range(1, nr_numbers + 1):
+    pwd += random.choice(numbers)
+print(pwd)
+
+pwd = list(pwd)
+random.shuffle(pwd)
+print("".join(pwd))
